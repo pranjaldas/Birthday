@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,28 +10,26 @@
     tools:context=".MainActivity">
 
 
-    <VideoView
-        android:layout_marginTop="2dp"
-        android:id="@+id/video1View"
-        android:layout_width="match_parent"
-        android:layout_height="296dp" />
+        <VideoView
+            android:layout_marginTop="2dp"
+            android:id="@+id/video1View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-    <Button
-        android:id="@+id/play1Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:onClick="playVideo1"
-        android:text="PLAY 1" />
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/ic_play"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:id="@+id/play_button"/>
 
-    <ImageView
+
+<!--    <ImageView
         android:layout_gravity="center"
-        android:id="@+id/imageView"
         android:layout_width="329dp"
         android:layout_height="292dp"
-        app:srcCompat="@drawable/rose" />
+        app:srcCompat="@drawable/rose" />-->
 
 
-</LinearLayout>
+</RelativeLayout>
